@@ -47,7 +47,7 @@ for(t in 2:length(y)){
 mf<-rep(0,steps);mf[1]=phi*m[length(y)]+K*v[length(y)];for(s in 2:steps){mf[s]=phi*mf[s-1]}
 fo=(mf+co);#if(sum(tail(yy,steps))==0){fo=rep(0,steps)};
 fout=var(v)
-if(min(sfactors)>0){fo=fo*sfactout;fout=var(v*sfactout)};
+if(min(sfactors)>0){fo=fo*sfactout;fout=var(v)};
 
 
 Interv<-c();Interv[1]=fout;for(j in 2:steps){Interv[j]=Interv[j-1]+phi^(2*(j-2))*K^(2)*fout};
@@ -60,7 +60,7 @@ list(mean=fo,lower=cbind(lower0,lower50,lower67,lower95,lower99),
      upper=cbind(upper0,upper50,upper67,upper95,upper99))
 }
 
-
+ 
 steps=28
 
 spl=function(y,act,metodo,steps){#y=ts(y,frequency = 7)
