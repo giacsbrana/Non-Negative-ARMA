@@ -10,7 +10,7 @@ Therefore, in-sample and out-of-sample data are concatenated in a single string.
 
 #################################################################################################################################################
 
-The Excel file dataset2.xlsx provides the dataset 2 as used in Sbrana & Babai (2026, EJOR). 
+The Excel file dataset 2.xlsx provides the dataset 2 as used in Sbrana & Babai (2026, EJOR). 
 
 The file contains four different spreadsheets: steps= 14, steps= 28, steps= 56, Raw data
 
