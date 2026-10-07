@@ -95,7 +95,7 @@ for good in range(len(L12)):
   
 print(WRMSSE12,SPL12)
 
-G=[L12[f'{i}']['item'] for i in range(3049)]
+G=[weights['Agg_Level_2'][30490+i] for i in range(3049)]
 
 
 L11={f'{k1*3049+k2}':{'item': g,'dept':s,'data':listsum([L12[i]['data'] for i in L12 if L12[i]['item']==g  and L12[i]['dept'][0]==s]),
